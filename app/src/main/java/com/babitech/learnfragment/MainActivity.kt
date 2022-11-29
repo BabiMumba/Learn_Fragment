@@ -23,19 +23,20 @@ class MainActivity : AppCompatActivity() {
         loadFragmant(HomeFragment())
 
         bottom_nav.setOnNavigationItemSelectedListener { menuitem ->
-            when{
-                menuitem.itemId==R.id.menu ->{
+            when (menuitem.itemId) {
+                R.id.menu -> {
                     loadFragmant(MenuFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
-                menuitem.itemId==R.id.home ->{
+                R.id.home -> {
                     loadFragmant(HomeFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
-                menuitem.itemId==R.id.search ->{
+                R.id.search -> {
                     loadFragmant(SearchFragment())
                     return@setOnNavigationItemSelectedListener true
-                }else->{
+                }
+                else -> {
                     return@setOnNavigationItemSelectedListener false
                 }
             }
