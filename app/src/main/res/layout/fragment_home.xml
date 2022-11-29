@@ -7,15 +7,14 @@
     android:layout_height="match_parent"
     tools:context=".fragment.SearchFragment">
 
-
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Home"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:layout_centerInParent="true"/>
+        android:id="@+id/may_recycler"
+        tools:listitem="@layout/layout_movie"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        />
 
 
 </RelativeLayout>
