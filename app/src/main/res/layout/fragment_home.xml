@@ -11,10 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/may_recycler"
+        tools:itemCount="3"
         tools:listitem="@layout/layout_movie"
         android:layout_alignParentTop="true"
         android:layout_margin="10dp"
         />
-
 
 </RelativeLayout>
