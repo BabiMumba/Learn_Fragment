@@ -6,7 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/framelayour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/vview"
+        />
     <View
+        android:id="@+id/vview"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="@color/black"
