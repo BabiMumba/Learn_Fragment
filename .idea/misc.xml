@@ -6,6 +6,8 @@
         <entry key="..\:/Android_app/LearnFragment/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Android_app/LearnFragment/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Android_app/LearnFragment/app/src/main/res/layout/layout_movie.xml" value="0.22" />
+        <entry key="..\:/Android_app/LearnFragment/app/src/main/res/menu/activity_main_drawer.xml" value="0.1835897435897436" />
+        <entry key="..\:/Android_app/LearnFragment/app/src/main/res/menu/master_bottom_navigation.xml" value="0.22" />
       </map>
     </option>
   </component>
