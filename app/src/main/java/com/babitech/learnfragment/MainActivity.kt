@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         loadFragmant(HomeFragment())
+        bottom_nav.selectedItemId = R.id.home
 
         bottom_nav.setOnNavigationItemSelectedListener { menuitem ->
             when (menuitem.itemId) {
