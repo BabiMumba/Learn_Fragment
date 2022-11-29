@@ -21,35 +21,25 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         loadFragmant(HomeFragment())
+
         bottom_nav.selectedItemId = R.id.home
 
         bottom_nav.setOnNavigationItemSelectedListener { menuitem ->
             when (menuitem.itemId) {
-                R.id.menu -> {
-                    loadFragmant(MenuFragment())
-                    return@setOnNavigationItemSelectedListener true
-                }
-                R.id.home -> {
-                    loadFragmant(HomeFragment())
-                    return@setOnNavigationItemSelectedListener true
-                }
-                R.id.search -> {
-                    loadFragmant(SearchFragment())
-                    return@setOnNavigationItemSelectedListener true
-                }
-                else -> {
-                    return@setOnNavigationItemSelectedListener false
-                }
+                R.id.menu -> loadFragmant(MenuFragment())
+                R.id.search -> loadFragmant(SearchFragment())
+                R.id.home -> loadFragmant(HomeFragment())
+
             }
+            true
         }
 
 
     }
-    private fun loadFragmant(fragment: Fragment){
-        supportFragmentManager.beginTransaction().also { fragmentTransaction ->
-            fragmentTransaction.replace(R.id.framelayour,fragment)
-            fragmentTransaction.commit()
+    private fun loadFragmant(fragment: Fragment) =
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.framelayour,fragment)
+            commit()
         }
-    }
 
 }
